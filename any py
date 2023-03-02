@@ -1,0 +1,41 @@
+import random
+def roomGen():
+    num = random.randrange(0,100)
+    if num < 25:
+        return 2
+    elif num < 50:
+        return 3
+    elif num < 75:
+        return 4
+    elif num < 100:
+        return 5
+    
+
+def roomescription(num):
+    if num == 1:
+        print ("Kitchen")
+    elif num == 2:
+        print ("Living room")
+    elif num == 3:
+        print ("Engine room")
+    elif num == 4:
+        print ("Storage")
+    elif num == 5:
+        print ("Storagewe4")
+        
+        
+user = input(" Do you want to go into the rooms")
+if user == 'yes':
+    if roomGen() == 2:
+        roomescription(2)
+    if roomGen() == 3:
+        roomescription(3)
+    if roomGen() == 4:
+        roomescription(4)
+    if roomGen() == 5:
+        roomescription(5)
+        
+
+        
+
+        
